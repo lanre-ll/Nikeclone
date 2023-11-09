@@ -257,7 +257,9 @@ nav {
 
 }
 .footer p{
-	margin: 0 35% 200px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
 	width: 50%;
 	font-size: 17px;
 	font-weight: bold;
