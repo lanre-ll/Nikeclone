@@ -1,0 +1,447 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+nav {
+	background-color: #3a99a4;
+	width: 100%;
+	height: 88px;
+}
+
+.nav-container {
+	padding: 17px 10px;
+	margin: 0 140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.logo img {
+	width: 52%;
+
+}
+
+.nav-container ul li{
+	list-style: none;
+	display: inline-block;
+	list-style: none;
+	margin: 10px 12px;
+}
+
+.nav-container ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.nav-container ul li a::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	background: orange;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+.nav-container ul li a:hover {
+	color: orange;
+}
+
+.nav-container ul li a:hover::after {
+	width: 100%;
+
+}
+
+.hero {
+    height: 683px;
+    background: url("./images/nike-banner.jpeg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .overlay {
+  	width: 100%;
+	height: 683px;
+	background-color: #103e4a;
+	opacity: 0.9;
+	position: absolute;
+	top: 109px;
+  }
+
+  .banner {
+  	z-index: 1;
+  	border: 8px solid white;
+  	padding: 5% 15%;
+  	text-align: center;
+  }
+
+  .banner h1 {
+  	margin-bottom: 40px;
+  	font-size: 60px;
+  	color: white;
+  	font-weight: 600;
+  }
+
+  .banner p {
+  	color: #17e006;
+	font-size: 28px;
+	margin-bottom: 80px;
+  }
+
+  .banner button {
+  	background-color: orange;
+	color: white;
+	padding: 25px 45px;
+	text-decoration: none;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+  }
+
+  .section-product {
+  	margin-top: 100px;
+  	position: relative;
+  }
+
+  .section-product img {
+  	width: 80%;
+  	display: block;
+  	margin: 0 auto;
+  	
+  }
+
+  .section-product p {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	font-size: 13px;
+	bottom: 20px;
+	color: white;
+	padding: 0 8px 8px;
+	max-height: 80%;
+	line-height: 25px;
+  }
+
+.more-products {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	margin: 0 10%;
+}
+
+.more-products img {
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+	.more-products {
+		display: block;
+	}
+
+	.more-products img {
+		display: block;
+		width: 80%;
+		height: 60%;
+		object-fit: cover;
+		margin: auto;
+	}
+
+	.banner {
+		padding: 2% 8%;
+		margin: 0 20px;
+	}
+}
+
+@media only screen and (max-width: 574px) {
+	.banner h1{
+		font-size: 35px;
+	}
+
+}
+
+.more-products-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10px;
+	margin: 20px 13% 150px;
+}
+
+.more-products22 img {
+	width: 100%;
+	height: 80%;
+	object-fit: contain;
+
+}
+
+.more-products2 img {
+	width: 100%;
+	height: 90%;
+	object-fit: contain;
+
+}
+
+.more-products22-title {
+	color: grey;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+	.more-products-grid {
+		display: block;
+	}
+
+	.more-products-grid img {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+		margin: auto;
+	}
+}
+
+
+.testing-process {
+	margin-top: 100px;
+}
+
+.testing-process img {
+	width: 75%;
+  	display: block;
+  	margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.testing-process img{
+		width: 80%;
+	}
+}
+
+.testing-p{
+	margin:30px auto;
+	display: block;
+	width: 85%;
+}
+
+.testing-p p {
+	font-size: 17px;
+	line-height: 25px;
+	color: #272626;
+}
+.testing-p a {
+	font-weight: bold;
+	color: #2f5aae;
+}
+
+.line {
+	border-top: 2px solid black;
+	margin-bottom: 30px;
+}
+
+.footer {
+	margin:30px auto;
+	display: block;
+}
+
+.footer img {
+	margin: 10px auto;
+	display: block;
+
+}
+.footer p{
+	margin: 0 35% 200px;
+	width: 50%;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.about {
+	margin: 55px 11% 50px;
+}
+
+.about img {
+	width: 100%;
+  	display: block;
+  	margin: 0 auto;
+}
+
+.about h1{
+	font-size: 60px;
+	margin: 0 0 50px 0;
+}
+
+.center-about h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+.about p {
+	font-size: 17px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	line-height: 30px;
+	color: #272626;
+}
+
+.about a {
+	text-decoration: none;
+}
+
+
+.about button {
+	margin: 15px auto;
+	display: block;
+	padding: 25px 50px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	background-color: #5cb85c;
+	border-radius: 8px;
+	border: none;
+}
+
+.about button:hover {
+	background-color: #6abe6a;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.location {
+	width: 100%;
+	margin: auto;
+}
+
+.location iframe {
+	width: 100%;
+	height: 300px;
+}
+
+.apply img{
+	display: block;
+	margin: 8px auto;
+	width: 48%;
+}
+
+.container{
+	margin: 0 11% 0;
+	
+}
+
+form {
+	padding: 10px;
+}
+
+form p {
+	font-weight: bold;
+}
+
+.names input {
+	margin: 20px 5px;
+	padding: 10px 50px 10px 5px;
+	outline: none;
+	width: 30%;
+}
+
+.names span {
+	color: red;
+}
+
+.others input {
+	margin: 20px 5px;
+	padding: 10px 50px 10px 5px;
+	outline: none;
+	width: 61%;
+}
+
+.others span {
+	color: red;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #066aab;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+	.apply img{
+		width: 70%;
+	}
+
+	.names input {
+		width: 45%;
+	}
+}
+
+
+/*------------------------------Media query---------------------------*/
+nav .fas{
+	display: none;
+	color: white;
+	border: 1px solid white;
+	padding: 4px 10px;
+}
+@media only screen and (max-width: 960px){
+	nav .fas{
+		display: block;
+		font-size: 20px;
+
+	}
+
+	nav ul {
+		background: #3a99a4;
+		position: fixed;
+		top: 0;
+		left: -300px;
+		width: 300px;
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 2;
+		transition: left 0.5s;
+	}
+
+	.banner {
+		margin: 0 20px;
+	}
+
+	.nav-container {
+		margin: 0;
+	}
+
+	.nav-container ul li {
+		display: block;
+		margin: 25px;
+	}
+
+	nav ul .fas {
+		position: absolute;
+		top: 25px;
+		right: 25px;
+		cursor: pointer;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
